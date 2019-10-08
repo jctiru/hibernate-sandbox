@@ -1,10 +1,14 @@
 package test.hibernatesandbox.inheritance.singletable.entity;
 
+import javax.persistence.Column;
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
-public class CreditCard extends Payment{
+@DiscriminatorValue("cc")
+public class CreditCard extends Payment {
 
+	@Column(name = "card_number")
 	private String creditCardNumber;
 
 	public String getCreditCard() {
