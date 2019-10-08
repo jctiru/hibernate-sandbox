@@ -5,7 +5,7 @@ import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
-@DiscriminatorValue("cc")
+@DiscriminatorValue("ch")
 public class Check extends Payment {
 
 	@Column(name = "check_number")
