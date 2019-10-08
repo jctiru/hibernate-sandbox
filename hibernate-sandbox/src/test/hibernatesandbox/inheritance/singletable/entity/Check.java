@@ -19,4 +19,9 @@ public class Check extends Payment {
 		this.checkNumber = checkNumber;
 	}
 
+	@Override
+	public String toString() {
+		return "Check [checkNumber=" + checkNumber + ", toString()=" + super.toString() + "]";
+	}
+
 }

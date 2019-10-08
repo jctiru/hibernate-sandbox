@@ -19,4 +19,9 @@ public class CreditCard extends Payment {
 		this.creditCardNumber = creditCard;
 	}
 
+	@Override
+	public String toString() {
+		return "CreditCard [creditCardNumber=" + creditCardNumber + ", toString()=" + super.toString() + "]";
+	}
+
 }
