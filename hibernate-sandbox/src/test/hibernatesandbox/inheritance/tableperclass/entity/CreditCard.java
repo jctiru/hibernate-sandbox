@@ -2,8 +2,10 @@ package test.hibernatesandbox.inheritance.tableperclass.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "card")
 public class CreditCard extends Payment {
 
 	@Column(name = "card_number")
